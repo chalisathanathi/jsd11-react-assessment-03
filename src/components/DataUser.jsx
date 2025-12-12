@@ -1,9 +1,8 @@
-import DeleteButton from "./DeleteButton";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 
-export default function DataAdmin() {
-
+export default function DataUser () {
     const url = "https://67eca027aa794fb3222e43e2.mockapi.io/members";
 
     const [data, setData] = useState([]);
@@ -48,7 +47,7 @@ export default function DataAdmin() {
                 <th className="border text-lg font-semibold px-30 py-4 bg-teal-600 text-white">Name</th>
                 <th className="border text-lg font-semibold px-30 py-4 bg-teal-600 text-white">Lastname</th>
                 <th className="border text-lg font-semibold px-30 py-4 bg-teal-600 text-white">Position</th>
-                <th className="border text-lg font-semibold px-30 py-4 bg-teal-600 text-white">Action</th>
+                {/* <th className="border text-lg font-semibold px-30 py-4 bg-teal-600 text-white">Action</th> */}
             </tr>
             </thead>
             <tbody>
@@ -57,11 +56,10 @@ export default function DataAdmin() {
                             <td className="border px-30 py-4">{item.name}</td>
                             <td className="border px-30 py-4">{item.lastname}</td>
                             <td className="border px-30 py-4">{item.position}</td>
-                            <td className="border px-30 py-4"><DeleteButton>Delete</DeleteButton></td>
                         </tr>
                     ))}
             </tbody>
         </table>
         </div>
-    );
+    )
 }

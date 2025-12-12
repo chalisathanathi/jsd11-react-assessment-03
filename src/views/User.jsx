@@ -1,7 +1,7 @@
-import DataTable from "../components/DataTable";
+import DataUser from "../components/DataUser";
 
 export default function User () {
     return (
-        <DataTable />
+        <DataUser />
     );
 }

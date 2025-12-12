@@ -1,7 +1,7 @@
-import axios from "axios";
+// import axios from "axios";
 
-let person = {
-    name: "MaeYonnaise",
-    lastname: "A friendly person",
-    position: "111",
-};
+// let person = {
+//     name: "MaeYonnaise",
+//     lastname: "A friendly person",
+//     position: "111",
+// };
